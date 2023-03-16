@@ -2,13 +2,13 @@ import QtQuick 6.2
 import QtQuick.Controls 6.2
 import WeatherCoach
 
-Window {
+WindowWOD {
     width: Constants.width
     height: Constants.height
 
     visible: true
 
-    SwipeView {
+    SwipeViewWOD {
         id: swipeView
         anchors.top: tabBar.bottom
         anchors.right: parent.right
@@ -16,24 +16,24 @@ Window {
         anchors.left: parent.left
         currentIndex: tabBar.currentIndex
 
-        Screen01 {
+        Screen01WOD {
         }
 
-        Screen02 {
+        Screen02WOD {
         }
     }
 
-    TabBar {
+    TabBarWOD {
         anchors.left: parent.left
         anchors.right: parent.right
 
         id: tabBar
         currentIndex: swipeView.currentIndex
 
-        TabButton {
+        TabButtonWOD {
             text: qsTr("Page 1")
         }
-        TabButton {
+        TabButtonWOD {
             text: qsTr("Page 2")
         }
     }
