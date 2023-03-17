@@ -112,8 +112,9 @@ Rectangle {
             width: 375
             height: 76
             color: "#ffffff"
-            text: qsTr("Sunrise:  6:33 AM")
+            text: qsTr("Sunset:  6:50 PM")
             font.pixelSize: 45
+            horizontalAlignment: Text.AlignRight
             font.bold: true
         }
 
