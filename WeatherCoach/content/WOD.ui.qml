@@ -14,6 +14,7 @@ Rectangle {
     height: Constants.height
 
     color: Constants.backgroundColor
+    border.color: "#ffffff"
 
     Text {
         text: qsTr("Hello WeatherCoach") + " 01"

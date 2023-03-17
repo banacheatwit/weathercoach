@@ -15,8 +15,8 @@ Rectangle {
     id: rectangle
     width: Constants.width
     height: Constants.height
+    color: "#ffffff"
 
-    color: Constants.backgroundColor
 
     Image {
         id: image
@@ -117,6 +117,8 @@ Rectangle {
             width: 1033
             height: 1059
             color: "#354658"
+            border.color: "#ffffff"
+            border.width: 10
 
             Grid {
                 id: grid
@@ -124,7 +126,8 @@ Rectangle {
                 y: 0
                 width: 1033
                 height: 1059
-
+                padding: 16
+                
                 Text {
                     id: text1
                     x: 506
@@ -142,39 +145,35 @@ Rectangle {
                 }
             }
         }
-    }
 
-    RowLayout {
-        x: 0
-        y: 1782
-        width: 1080
-        height: 138
-        spacing: 0
-        TabButton {
-            id: tabButton2
-            text: qsTr("Forcast Detail")
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-        }
-
-        TabButton {
-            id: tabButton1
-            text: qsTr("Weather Overview")
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-        }
-
-        TabButton {
-            id: tabButton
-            text: qsTr("Clothing Preparation")
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+        RowLayout {
+            x: 0
+            y: 1814
+            width: 1080
+            height: 106
+            Button {
+                id: button7
+                text: qsTr("Forcast Detail")
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
+            
+            Button {
+                id: button8
+                text: qsTr("Weather Overview")
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
+            
+            Button {
+                id: button9
+                text: qsTr("Clothing Prep")
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
         }
     }
-
+    
     StackLayout {
         id: stackLayout
         x: -836
