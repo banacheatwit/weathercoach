@@ -15,8 +15,8 @@ Rectangle {
     id: rectangle
     width: Constants.width
     height: Constants.height
+    color: "#ffffff"
 
-    color: Constants.backgroundColor
 
     Image {
         id: image
@@ -117,7 +117,9 @@ Rectangle {
             width: 1033
             height: 1059
             color: "#354658"
-
+            border.color: "#ffffff"
+            border.width: 5
+            
             Grid {
                 id: grid
                 x: 0
@@ -129,49 +131,51 @@ Rectangle {
                     id: text1
                     x: 506
                     y: 624
+                    color: "#ffffff"
                     text: qsTr("Time")
-                    font.pixelSize: 12
+                    font.pixelSize: 40
+                    font.bold: true
+                    padding: 16
                 }
 
                 Text {
                     id: text2
                     x: 506
                     y: 624
+                    color: "#ffffff"
                     text: qsTr("Temp")
-                    font.pixelSize: 12
+                    font.pixelSize: 40
+                    font.bold: true
+                    padding: 16
                 }
             }
         }
-    }
 
-    RowLayout {
-        x: 0
-        y: 1782
-        width: 1080
-        height: 138
-        spacing: 0
-        TabButton {
-            id: tabButton2
-            text: qsTr("Forcast Detail")
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-        }
+        RowLayout {
+            x: 0
+            y: 1814
+            width: 1080
+            height: 106
+            Button {
+                id: button7
+                text: qsTr("Forcast Detail")
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
 
-        TabButton {
-            id: tabButton1
-            text: qsTr("Weather Overview")
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-        }
+            Button {
+                id: button8
+                text: qsTr("Weather Overview")
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
 
-        TabButton {
-            id: tabButton
-            text: qsTr("Clothing Preparation")
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+            Button {
+                id: button9
+                text: qsTr("Clothing Prep")
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+            }
         }
     }
 
