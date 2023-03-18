@@ -16,7 +16,7 @@ Rectangle {
     width: Constants.width
     height: Constants.height
     color: "#ffffff"
-
+    border.color: "#ffffff"
 
     Image {
         id: image
@@ -62,6 +62,7 @@ Rectangle {
             Button {
                 id: button
                 text: qsTr("Sun")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 flat: false
@@ -70,27 +71,31 @@ Rectangle {
             Button {
                 id: button3
                 text: qsTr("MON")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
 
             Button {
                 id: button2
-                text: qsTr("TUES")
+                text: qsTr("TUE")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
 
             Button {
                 id: button4
-                text: qsTr("WEDS")
+                text: qsTr("WED")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
 
             Button {
                 id: button1
-                text: qsTr("THURS")
+                text: qsTr("THU")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
@@ -98,6 +103,7 @@ Rectangle {
             Button {
                 id: button5
                 text: qsTr("FRI")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
@@ -105,6 +111,7 @@ Rectangle {
             Button {
                 id: button6
                 text: qsTr("SAT")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
@@ -119,36 +126,6 @@ Rectangle {
             color: "#354658"
             border.color: "#ffffff"
             border.width: 5
-            
-            Grid {
-                id: grid
-                x: 0
-                y: 0
-                width: 1033
-                height: 1059
-
-                Text {
-                    id: text1
-                    x: 506
-                    y: 624
-                    color: "#ffffff"
-                    text: qsTr("Time")
-                    font.pixelSize: 40
-                    font.bold: true
-                    padding: 16
-                }
-
-                Text {
-                    id: text2
-                    x: 506
-                    y: 624
-                    color: "#ffffff"
-                    text: qsTr("Temp")
-                    font.pixelSize: 40
-                    font.bold: true
-                    padding: 16
-                }
-            }
         }
 
         RowLayout {
@@ -159,6 +136,7 @@ Rectangle {
             Button {
                 id: button7
                 text: qsTr("Forcast Detail")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
@@ -166,6 +144,7 @@ Rectangle {
             Button {
                 id: button8
                 text: qsTr("Weather Overview")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
@@ -173,8 +152,329 @@ Rectangle {
             Button {
                 id: button9
                 text: qsTr("Clothing Prep")
+                font.pointSize: 20
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+            }
+        }
+
+        GridLayout {
+            x: 34
+            y: 677
+            width: 1015
+            height: 179
+            rows: 2
+            columns: 7
+
+            Text {
+                id: time__text
+                color: "#ffffff"
+                text: qsTr("TIME")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignLeft
+                Layout.preferredHeight: 71
+                Layout.preferredWidth: 132
+                font.bold: true
+            }
+
+            Text {
+                id: time__text0
+                color: "#ffffff"
+                text: qsTr("12 am")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                Layout.preferredHeight: 71
+                Layout.preferredWidth: 132
+            }
+
+            Text {
+                id: time__text1
+                color: "#ffffff"
+                text: qsTr("1 am")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                Layout.preferredHeight: 71
+                Layout.preferredWidth: 132
+            }
+
+            Text {
+                id: time__text2
+                color: "#ffffff"
+                text: qsTr("2 am")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: time__text3
+                color: "#ffffff"
+                text: qsTr("3 am")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: time__text4
+                color: "#ffffff"
+                text: qsTr("4 am")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: time__text5
+                color: "#ffffff"
+                text: qsTr("5 am")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: temp__text
+                color: "#ffffff"
+                text: qsTr("TEMP")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignLeft
+                verticalAlignment: Text.AlignVCenter
+                font.bold: true
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: temp__text0
+                color: "#ffffff"
+                text: qsTr("71°")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: temp__text1
+                color: "#ffffff"
+                text: qsTr("78°")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: temp__text2
+                color: "#ffffff"
+                text: qsTr("73°")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: temp__text3
+                color: "#ffffff"
+                text: qsTr("74°")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: temp__text4
+                color: "#ffffff"
+                text: qsTr("69°")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: temp__text5
+                color: "#ffffff"
+                text: qsTr("75°")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: precip__text
+                color: "#ffffff"
+                text: qsTr("PRECIP")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignLeft
+                verticalAlignment: Text.AlignVCenter
+                font.bold: true
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: precip__text0
+                color: "#ffffff"
+                text: qsTr("10%")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: precip__text1
+                color: "#ffffff"
+                text: qsTr("17%")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: precip__text2
+                color: "#ffffff"
+                text: qsTr("33%")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: precip__text3
+                color: "#ffffff"
+                text: qsTr("59%")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: precip__text4
+                color: "#ffffff"
+                text: qsTr("71%")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: precip__text5
+                color: "#ffffff"
+                text: qsTr("38%")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+            Text {
+                id: rain__text
+                color: "#ffffff"
+                text: qsTr("RAIN")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignLeft
+                verticalAlignment: Text.AlignVCenter
+                font.bold: true
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: rain__text0
+                color: "#ffffff"
+                text: qsTr("0.01in")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: rain__text1
+                color: "#ffffff"
+                text: qsTr("0.01in")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: rain__text2
+                color: "#ffffff"
+                text: qsTr("0.02in")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: rain__text3
+                color: "#ffffff"
+                text: qsTr("0.34in")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: rain__text4
+                color: "#ffffff"
+                text: qsTr("0.56in")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: rain__text5
+                color: "#ffffff"
+                text: qsTr("0.05in")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+            }
+
+            Text {
+                id: snow__text
+                color: "#ffffff"
+                text: qsTr("SNOW")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignLeft
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
+                font.bold: true
+            }
+
+            Text {
+                id: rain__text6
+                color: "#ffffff"
+                text: qsTr("0.0in")
+                font.pixelSize: 40
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                Layout.preferredWidth: 132
+                Layout.preferredHeight: 71
             }
         }
     }
