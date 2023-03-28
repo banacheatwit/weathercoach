@@ -1,0 +1,34 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+<file alias="qml/asset_imports/asset_imports.txt">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/asset_imports/asset_imports.txt</file>
+<file alias="qml/CMakeLists.txt">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/CMakeLists.txt</file>
+<file alias="qml/content/App.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/App.qml</file>
+<file alias="qml/content/CMakeLists.txt">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/CMakeLists.txt</file>
+<file alias="qml/content/CPD.ui.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/CPD.ui.qml</file>
+<file alias="qml/content/FDD.ui.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/FDD.ui.qml</file>
+<file alias="qml/content/partly cloudy.png">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/partly cloudy.png</file>
+<file alias="qml/content/rainy.jpg">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/rainy.jpg</file>
+<file alias="qml/content/WOD.ui.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/WOD.ui.qml</file>
+<file alias="qml/content/fonts/fonts.txt">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/content/fonts/fonts.txt</file>
+<file alias="qml/imports/CMakeLists.txt">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/CMakeLists.txt</file>
+<file alias="qml/imports/WeatherCoach/CMakeLists.txt">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/WeatherCoach/CMakeLists.txt</file>
+<file alias="qml/imports/WeatherCoach/Constants.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/WeatherCoach/Constants.qml</file>
+<file alias="qml/imports/WeatherCoach/DirectoryFontLoader.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/WeatherCoach/DirectoryFontLoader.qml</file>
+<file alias="qml/imports/WeatherCoach/EventListModel.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/WeatherCoach/EventListModel.qml</file>
+<file alias="qml/imports/WeatherCoach/EventListSimulator.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/WeatherCoach/EventListSimulator.qml</file>
+<file alias="qml/imports/WeatherCoach/qmldir">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/WeatherCoach/qmldir</file>
+<file alias="qml/imports/WeatherCoach/designer/plugin.metainfo">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/imports/WeatherCoach/designer/plugin.metainfo</file>
+<file alias="qml/main.qml">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/main.qml</file>
+<file alias="qml/qmlcomponents">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/qmlcomponents</file>
+<file alias="qml/qmlmodules">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/qmlmodules</file>
+<file alias="qml/qtquickcontrols2.conf">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/qtquickcontrols2.conf</file>
+<file alias="qml/src/app_environment.h">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/src/app_environment.h</file>
+<file alias="qml/src/import_qml_components_plugins.h">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/src/import_qml_components_plugins.h</file>
+<file alias="qml/src/import_qml_plugins.h">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/src/import_qml_plugins.h</file>
+<file alias="qml/src/main.cpp">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/src/main.cpp</file>
+<file alias="qml/WeatherCoach.qmlproject">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/WeatherCoach.qmlproject</file>
+<file alias="qml/WeatherCoach.qmlproject.qtds">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/WeatherCoach.qmlproject.qtds</file>
+<file alias="qml/WeatherCoach.qmlproject.qtds.849447a">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/WeatherCoach.qmlproject.qtds.849447a</file>
+<file alias="qml/WeatherCoach.qmlproject.user">C:/Users/ericj/Documents/_School/WeatherCoach/WeatherCoach2/WeatherCoach/qml/WeatherCoach.qmlproject.user</file>
+</qresource>
+</RCC>
