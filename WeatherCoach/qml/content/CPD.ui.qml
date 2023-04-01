@@ -83,159 +83,215 @@ Rectangle {
         }
 
         Text {
-            id: text4
-            x: 395
-            y: 739
-            width: 290
-            height: 83
+            id: currently
+            x: 48
+            y: 593
+            width: 375
+            height: 76
             color: "#ffffff"
-            text: qsTr("Rainy")
+            text: qsTr("Currently:")
+            font.pixelSize: 45
+            horizontalAlignment: Text.AlignHCenter
+            font.bold: true
+        }
+
+        Text {
+            id: later
+            x: 667
+            y: 593
+            width: 375
+            height: 76
+            color: "#ffffff"
+            text: qsTr("Later:")
+            font.pixelSize: 45
+            horizontalAlignment: Text.AlignHCenter
+            font.bold: true
+        }
+
+        Column {
+            id: column
+            x: 51
+            y: 675
+            width: 370
+            height: 969
+        }
+
+        Text {
+            id: current_temp
+            x: 136
+            y: 675
+            width: 200
+            height: 65
+            color: "#e5e4e2"
+            text: qsTr("24 °F")
             font.pixelSize: 40
             horizontalAlignment: Text.AlignHCenter
             font.bold: true
         }
 
         Text {
-            id: text1
-            x: 31
-            y: 374
-            width: 375
-            height: 76
-            color: "#ffffff"
-            text: qsTr("Sunrise:  6:33 AM")
-            font.pixelSize: 45
+            id: outer_layer
+            x: 136
+            y: 739
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Winter jacket")
+            font.pixelSize: 46
+            scale: 1.1
+        }
+
+        Text {
+            id: inner_layer
+            x: 136
+            y: 803
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Longsleeve shirt")
+            font.pixelSize: 46
+            scale: 1.1
+        }
+
+        Text {
+            id: bottom_layer
+            x: 136
+            y: 867
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Warm pants")
+            font.pixelSize: 46
+            scale: 1.1
+        }
+
+        Text {
+            id: shoes
+            x: 136
+            y: 931
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Winter boots")
+            font.pixelSize: 46
+            scale: 1.1
+        }
+
+        Text {
+            id: optional_1
+            x: 136
+            y: 995
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Scarf")
+            font.pixelSize: 46
+            scale: 1.1
+        }
+
+        Text {
+            id: optional_2
+            x: 136
+            y: 1059
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Winter hat")
+            font.pixelSize: 46
+            scale: 1.1
+        }
+
+        Column {
+            id: column2
+            x: 671
+            y: 675
+            width: 371
+            height: 969
+        }
+
+        Text {
+            id: later_temp
+            x: 755
+            y: 675
+            width: 200
+            height: 65
+            color: "#e5e4e2"
+            text: qsTr("17 °F")
+            font.pixelSize: 40
+            horizontalAlignment: Text.AlignHCenter
             font.bold: true
         }
 
         Text {
-            id: text2
-            x: 689
-            y: 374
-            width: 375
-            height: 76
-            color: "#ffffff"
-            text: qsTr("Sunset:  6:50 PM")
-            font.pixelSize: 45
-            horizontalAlignment: Text.AlignRight
-            font.bold: true
+            id: outer_layer1
+            x: 755
+            y: 739
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Winter jacket")
+            font.pixelSize: 46
+            scale: 1.1
         }
 
         Text {
-            id: text3
-            x: 427
-            y: 837
-            width: 225
-            height: 75
-            color: "#ffffff"
-            text: qsTr("H: 72°   L: 67°")
-            font.pixelSize: 35
-            font.family: "Segoe UI "
+            id: inner_layer1
+            x: 755
+            y: 803
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Thermal shirt")
+            font.pixelSize: 46
+            scale: 1.1
         }
 
-        RowLayout {
-            id: rowLayout
-            x: 83
-            y: 933
-            width: 913
-            height: 100
-
-            Text {
-                id: text5
-                color: "#ffffff"
-                text: qsTr("Now")
-                font.pixelSize: 28
-            }
-
-            Text {
-                id: text6
-                color: "#ffffff"
-                text: qsTr("1 PM")
-                font.pixelSize: 28
-            }
-
-            Text {
-                id: text7
-                color: "#ffffff"
-                text: qsTr("2 PM")
-                font.pixelSize: 28
-            }
-
-            Text {
-                id: text8
-                color: "#ffffff"
-                text: qsTr("3 PM")
-                font.pixelSize: 28
-            }
-
-            Text {
-                id: text9
-                color: "#ffffff"
-                text: qsTr("4 PM")
-                font.pixelSize: 28
-            }
-
-            Text {
-                id: text10
-                color: "#ffffff"
-                text: qsTr("5 PM")
-                font.pixelSize: 28
-            }
-
-            Text {
-                id: text11
-                color: "#ffffff"
-                text: qsTr("6 PM")
-                font.pixelSize: 28
-            }
+        Text {
+            id: bottom_layer1
+            x: 755
+            y: 867
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Thermal pants")
+            font.pixelSize: 46
+            scale: 1.1
         }
 
-        RowLayout {
-            id: rowLayout1
-            x: 84
-            y: 1105
-            width: 913
-            height: 100
-            Text {
-                color: "#ffffff"
-                text: qsTr("70°")
-                font.pixelSize: 28
-            }
+        Text {
+            id: shoes1
+            x: 755
+            y: 931
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Winter boots")
+            font.pixelSize: 46
+            scale: 1.1
+        }
 
-            Text {
-                color: "#ffffff"
-                text: qsTr("71°")
-                font.pixelSize: 28
-            }
+        Text {
+            id: optional_3
+            x: 755
+            y: 995
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Scarf")
+            font.pixelSize: 46
+            scale: 1.1
+        }
 
-            Text {
-                color: "#ffffff"
-                text: qsTr("72°")
-                font.pixelSize: 28
-            }
-
-            Text {
-                color: "#ffffff"
-                text: qsTr("70°")
-                font.pixelSize: 28
-            }
-
-            Text {
-                color: "#ffffff"
-                text: qsTr("68°")
-                font.pixelSize: 28
-            }
-
-            Text {
-                color: "#ffffff"
-                text: qsTr("68°")
-                font.pixelSize: 28
-            }
-
-            Text {
-                color: "#ffffff"
-                text: qsTr("68°")
-                font.pixelSize: 28
-            }
+        Text {
+            id: optional_4
+            x: 755
+            y: 1059
+            width: 200
+            height: 58
+            color: "#e5e4e2"
+            text: qsTr("Winter hat")
+            font.pixelSize: 46
+            scale: 1.1
         }
     }
 
@@ -247,79 +303,16 @@ Rectangle {
         height: 100
     }
 
-    AnimatedImage {
-        id: animatedImage
-        x: 70
-        y: 1025
-        width: 90
-        height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/rainy.png"
-    }
-
     Text {
         id: wod_time__text2
-        y: 544
-        width: 467
+        y: 360
+        width: 331
         height: 229
         color: "#ffffff"
-        text: qsTr("70°F")
+        text: qsTr("24°F")
         font.pixelSize: 150
         horizontalAlignment: Text.AlignHCenter
         anchors.horizontalCenterOffset: 1
         anchors.horizontalCenter: parent.horizontalCenter
-    }
-
-    AnimatedImage {
-        id: animatedImage1
-        x: 196
-        y: 1025
-        width: 90
-        height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/rainy.png"
-    }
-
-    AnimatedImage {
-        id: animatedImage2
-        x: 323
-        y: 1025
-        width: 90
-        height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/rainy.png"
-    }
-
-    AnimatedImage {
-        id: animatedImage3
-        x: 456
-        y: 1025
-        width: 90
-        height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/partly cloudy.jpg"
-    }
-
-    AnimatedImage {
-        id: animatedImage4
-        x: 593
-        y: 1025
-        width: 90
-        height: 90
-        source: "partly cloudy.png"
-    }
-
-    AnimatedImage {
-        id: animatedImage5
-        x: 721
-        y: 1025
-        width: 90
-        height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/sunny.png"
-    }
-
-    AnimatedImage {
-        id: animatedImage6
-        x: 857
-        y: 1025
-        width: 90
-        height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/sunny.png"
     }
 }
