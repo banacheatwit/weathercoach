@@ -188,6 +188,7 @@ Makefile: ../WeatherCoach/WeatherCoach.pro E:/QT/6.4.2/mingw_64/mkspecs/win32-g+
 		E:/QT/6.4.2/mingw_64/mkspecs/features/qt_config.prf \
 		E:/QT/6.4.2/mingw_64/mkspecs/win32-g++/qmake.conf \
 		E:/QT/6.4.2/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		E:/QT/6.4.2/mingw_64/mkspecs/features/exclusive_builds.prf \
 		E:/QT/6.4.2/mingw_64/mkspecs/features/toolchain.prf \
 		E:/QT/6.4.2/mingw_64/mkspecs/features/default_pre.prf \
@@ -220,10 +221,8 @@ Makefile: ../WeatherCoach/WeatherCoach.pro E:/QT/6.4.2/mingw_64/mkspecs/win32-g+
 		E:/QT/6.4.2/mingw_64/lib/Qt6Network.prl \
 		E:/QT/6.4.2/mingw_64/lib/Qt6Core.prl \
 		E:/QT/6.4.2/mingw_64/lib/Qt6EntryPoint.prl \
-		.qmake.stash \
 		E:/QT/6.4.2/mingw_64/mkspecs/features/build_pass.prf \
-		debug/qmake_qmake_immediate.qrc \
-		release/qmake_qmake_immediate.qrc
+		../WeatherCoach/qml.qrc
 	$(QMAKE) -o Makefile ..\WeatherCoach\WeatherCoach.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 E:/QT/6.4.2/mingw_64/mkspecs/features/spec_pre.prf:
 E:/QT/6.4.2/mingw_64/mkspecs/features/device_config.prf:
@@ -343,6 +342,7 @@ E:/QT/6.4.2/mingw_64/mkspecs/features/qt_functions.prf:
 E:/QT/6.4.2/mingw_64/mkspecs/features/qt_config.prf:
 E:/QT/6.4.2/mingw_64/mkspecs/win32-g++/qmake.conf:
 E:/QT/6.4.2/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 E:/QT/6.4.2/mingw_64/mkspecs/features/exclusive_builds.prf:
 E:/QT/6.4.2/mingw_64/mkspecs/features/toolchain.prf:
 E:/QT/6.4.2/mingw_64/mkspecs/features/default_pre.prf:
@@ -375,10 +375,8 @@ E:/QT/6.4.2/mingw_64/lib/Qt6Qml.prl:
 E:/QT/6.4.2/mingw_64/lib/Qt6Network.prl:
 E:/QT/6.4.2/mingw_64/lib/Qt6Core.prl:
 E:/QT/6.4.2/mingw_64/lib/Qt6EntryPoint.prl:
-.qmake.stash:
 E:/QT/6.4.2/mingw_64/mkspecs/features/build_pass.prf:
-debug/qmake_qmake_immediate.qrc:
-release/qmake_qmake_immediate.qrc:
+../WeatherCoach/qml.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\WeatherCoach\WeatherCoach.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

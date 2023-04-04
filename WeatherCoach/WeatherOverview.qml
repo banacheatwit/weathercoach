@@ -8,13 +8,10 @@ Check out https://doc.qt.io/qtcreator/creator-quick-ui-forms.html for details on
 /*Weather OVerview Dispaly*/
 import QtQuick 6.2
 import QtQuick.Controls 6.2
-import WeatherCoach
 import QtQuick.Layouts 1.0
 
 Rectangle {
-    id: rectangle
-    width: Constants.width
-    height: Constants.height
+    id: wod
     color: "#ffffff"
 
     Image {
@@ -237,21 +234,13 @@ Rectangle {
         }
     }
 
-    StackLayout {
-        id: stackLayout
-        x: -836
-        y: 1942
-        width: 100
-        height: 100
-    }
-
-    AnimatedImage {
+    Image {
         id: animatedImage
         x: 70
         y: 1025
         width: 90
         height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/rainy.png"
+        source: "rainy.png"
     }
 
     Text {
@@ -267,57 +256,57 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
     }
 
-    AnimatedImage {
+    Image {
         id: animatedImage1
         x: 196
         y: 1025
         width: 90
         height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/rainy.png"
+        source: "rainy.png"
     }
 
-    AnimatedImage {
+    Image {
         id: animatedImage2
         x: 323
         y: 1025
         width: 90
         height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/rainy.png"
+        source: "rainy.png"
     }
 
-    AnimatedImage {
+    Image {
         id: animatedImage3
         x: 456
         y: 1025
         width: 90
         height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/partly cloudy.jpg"
+        source: "rainy.png"
     }
 
-    AnimatedImage {
+    Image {
         id: animatedImage4
         x: 593
         y: 1025
         width: 90
         height: 90
-        source: "partly cloudy.png"
+        source: "rainy.png"
     }
 
-    AnimatedImage {
+    Image {
         id: animatedImage5
         x: 721
         y: 1025
         width: 90
         height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/sunny.png"
+        source: "rainy.png"
     }
 
-    AnimatedImage {
+    Image {
         id: animatedImage6
         x: 857
         y: 1025
         width: 90
         height: 90
-        source: "../../../OneDrive - Wentworth Institute of Technology/Desktop/sunny.png"
+        source: "rainy.png"
     }
 }

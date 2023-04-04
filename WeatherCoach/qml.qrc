@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>WeatherOverview.qml</file>
+        <file>ForecastDetail.qml</file>
+        <file>partly cloudy.png</file>
+        <file>rainy.jpg</file>
     </qresource>
 </RCC>
