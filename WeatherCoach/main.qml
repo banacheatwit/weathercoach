@@ -22,16 +22,23 @@ ApplicationWindow {
             id: page2
         }
 
+        ClothingPrep{
+            id: page3
+        }
+
     }
 
     footer: TabBar {
         id: tabBar
         currentIndex: swipeView.currentIndex
         TabButton {
-            text: qsTr("First")
+            text: qsTr("Forecast Detail")
         }
         TabButton {
-            text: qsTr("Second")
+            text: qsTr("Weather Overview")
+        }
+        TabButton {
+            text: qsTr("Clothing Preparation")
         }
     }
 

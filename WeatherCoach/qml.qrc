@@ -5,5 +5,7 @@
         <file>ForecastDetail.qml</file>
         <file>partly cloudy.png</file>
         <file>rainy.jpg</file>
+        <file>snowy.jpg</file>
+        <file>ClothingPrep.qml</file>
     </qresource>
 </RCC>
