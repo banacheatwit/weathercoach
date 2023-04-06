@@ -1,5 +1,5 @@
 --
--- File generated with SQLiteStudio v3.4.3 on Thu Apr 6 13:27:24 2023
+-- File generated with SQLiteStudio v3.4.3 on Thu Apr 6 19:46:26 2023
 --
 -- Text encoding used: System
 --
@@ -15,6 +15,11 @@ CREATE TABLE IF NOT EXISTS clothing (
     weather_conditions TEXT
 );
 INSERT INTO clothing (clothing_id, clothing_type, min_temp, max_temp, weather_conditions) VALUES (1, 'Winter Jacket', -100, 50, 'Rain, Snow, Sleet, Wind, Sunny, Cloudy');
+INSERT INTO clothing (clothing_id, clothing_type, min_temp, max_temp, weather_conditions) VALUES (2, 'Long Pants', -25, 68, 'Rain, Snow, Sleet, Windy, Sunny, Cloudy');
+INSERT INTO clothing (clothing_id, clothing_type, min_temp, max_temp, weather_conditions) VALUES (3, 'Rain Coat', NULL, NULL, 'Rain, Snow, Sleet, Windy');
+INSERT INTO clothing (clothing_id, clothing_type, min_temp, max_temp, weather_conditions) VALUES (4, 'Umbrella', NULL, NULL, 'Rain, Snow, Sleet');
+INSERT INTO clothing (clothing_id, clothing_type, min_temp, max_temp, weather_conditions) VALUES (5, 'Shorts', 69, 110, NULL);
+INSERT INTO clothing (clothing_id, clothing_type, min_temp, max_temp, weather_conditions) VALUES (6, 'Short Sleeve', 69, 110, NULL);
 
 -- Table: weather
 CREATE TABLE IF NOT EXISTS weather(
