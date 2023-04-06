@@ -1,0 +1,26 @@
+--
+-- File generated with SQLiteStudio v3.4.3 on Thu Apr 6 13:27:24 2023
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: clothing
+CREATE TABLE IF NOT EXISTS clothing (
+    clothing_id INTEGER PRIMARY KEY,
+    clothing_type TEXT,
+    min_temp INTEGER,
+    max_temp INTEGER,
+    weather_conditions TEXT
+);
+INSERT INTO clothing (clothing_id, clothing_type, min_temp, max_temp, weather_conditions) VALUES (1, 'Winter Jacket', -100, 50, 'Rain, Snow, Sleet, Wind, Sunny, Cloudy');
+
+-- Table: weather
+CREATE TABLE IF NOT EXISTS weather(
+weather_id INTEGER,
+temperature INTEGER,
+conditions TEXT);
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
