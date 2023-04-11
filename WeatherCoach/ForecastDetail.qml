@@ -27,12 +27,13 @@ Rectangle {
         fillMode: Image.Stretch
 
         Text {
-            id: fdd_time__text
+            id: text_1
+            objectName: "maintime_text"
             y: 58*.6
             width: 467*.6
             height: 229*.6
             color: "#ffffff"
-            text: qsTr("1:04 AM")
+            text: "01:00 PM"
             font.pixelSize: 120*.6
             horizontalAlignment: Text.AlignHCenter
             anchors.horizontalCenterOffset: 1
@@ -40,13 +41,13 @@ Rectangle {
         }
 
         Text {
-            id: fdd_time__text1
+            id: fdd_location__text
             x: 7*.6
             y: 197*.6
             width: 467*.6
             height: 229*.6
             color: "#ffffff"
-            text: qsTr("Ledyard, CT, 06339")
+            text: qsTr("Boston, MA, 02115")
             font.pixelSize: 40*.6
             horizontalAlignment: Text.AlignHCenter
             anchors.horizontalCenterOffset: 0
@@ -59,16 +60,17 @@ Rectangle {
             width: 1033*.6
             height: 88*.6
             Button {
-                id: button
-                text: qsTr("SUN")
+                id: day1__button
+                text: "SUN"
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 flat: false
             }
 
+
             Button {
-                id: button3
+                id: day2__button
                 text: qsTr("MON")
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
@@ -76,7 +78,7 @@ Rectangle {
             }
 
             Button {
-                id: button2
+                id: day3__button
                 text: qsTr("TUE")
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
@@ -84,7 +86,7 @@ Rectangle {
             }
 
             Button {
-                id: button4
+                id: day4__button
                 text: qsTr("WED")
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
@@ -92,7 +94,7 @@ Rectangle {
             }
 
             Button {
-                id: button1
+                id: day5__button
                 text: qsTr("THU")
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
@@ -100,7 +102,7 @@ Rectangle {
             }
 
             Button {
-                id: button5
+                id: day6__button
                 text: qsTr("FRI")
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
@@ -108,7 +110,7 @@ Rectangle {
             }
 
             Button {
-                id: button6
+                id: day7__button
                 text: qsTr("SAT")
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
@@ -254,6 +256,7 @@ Rectangle {
             }
             Text {
                 id: temp__text0
+                objectName: "text_0_1"
                 color: "#ffffff"
                 text: qsTr("71°")
                 font.pixelSize: 40*.6
@@ -264,6 +267,7 @@ Rectangle {
             }
             Text {
                 id: temp__text1
+                objectName: "text_1_1"
                 color: "#354658"
                 text: qsTr("78°")
                 font.pixelSize: 40*.6
@@ -274,6 +278,7 @@ Rectangle {
             }
             Text {
                 id: temp__text2
+                objectName: "text_2_1"
                 color: "#ffffff"
                 text: qsTr("73°")
                 font.pixelSize: 40*.6
@@ -284,6 +289,7 @@ Rectangle {
             }
             Text {
                 id: temp__text3
+                objectName: "text_3_1"
                 color: "#ffffff"
                 text: qsTr("74°")
                 font.pixelSize: 40*.6
@@ -294,6 +300,7 @@ Rectangle {
             }
             Text {
                 id: temp__text4
+                objectName: "text_4_1"
                 color: "#ffffff"
                 text: qsTr("69°")
                 font.pixelSize: 40*.6
@@ -304,6 +311,7 @@ Rectangle {
             }
             Text {
                 id: temp__text5
+                objectName: "text_5_1"
                 color: "#ffffff"
                 text: qsTr("75°")
                 font.pixelSize: 40*.6
@@ -327,6 +335,7 @@ Rectangle {
 
             Text {
                 id: wind__text0
+                objectName: "text_0_2"
                 color: "#ffffff"
                 text: qsTr("68°")
                 font.pixelSize: 40*.6
@@ -338,6 +347,7 @@ Rectangle {
 
             Text {
                 id: wind__text1
+                objectName: "text_1_2"
                 color: "#354658"
                 text: qsTr("68°")
                 font.pixelSize: 40*.6
@@ -349,6 +359,7 @@ Rectangle {
 
             Text {
                 id: wind__text2
+                objectName: "text_2_2"
                 color: "#ffffff"
                 text: qsTr("72°")
                 font.pixelSize: 40*.6
@@ -360,6 +371,7 @@ Rectangle {
 
             Text {
                 id: wind__text3
+                objectName: "text_3_2"
                 color: "#ffffff"
                 text: qsTr("70°")
                 font.pixelSize: 40*.6
@@ -371,6 +383,7 @@ Rectangle {
 
             Text {
                 id: wind__text4
+                objectName: "text_4_2"
                 color: "#ffffff"
                 text: qsTr("68°")
                 font.pixelSize: 40*.6
@@ -382,6 +395,7 @@ Rectangle {
 
             Text {
                 id: wind__text5
+                objectName: "text_5_2"
                 color: "#ffffff"
                 text: qsTr("73°")
                 font.pixelSize: 40*.6
@@ -404,6 +418,7 @@ Rectangle {
             }
             Text {
                 id: precip__text0
+                objectName: "text_0_3"
                 color: "#ffffff"
                 text: qsTr("10%")
                 font.pixelSize: 40*.6
@@ -414,6 +429,7 @@ Rectangle {
             }
             Text {
                 id: precip__text1
+                objectName: "text_1_3"
                 color: "#354658"
                 text: qsTr("17%")
                 font.pixelSize: 40*.6
@@ -424,6 +440,7 @@ Rectangle {
             }
             Text {
                 id: precip__text2
+                objectName: "text_2_3"
                 color: "#ffffff"
                 text: qsTr("33%")
                 font.pixelSize: 40*.6
@@ -434,6 +451,7 @@ Rectangle {
             }
             Text {
                 id: precip__text3
+                objectName: "text_3_3"
                 color: "#ffffff"
                 text: qsTr("59%")
                 font.pixelSize: 40*.6
@@ -444,6 +462,7 @@ Rectangle {
             }
             Text {
                 id: precip__text4
+                objectName: "text_4_3"
                 color: "#ffffff"
                 text: qsTr("71%")
                 font.pixelSize: 40*.6
@@ -454,6 +473,7 @@ Rectangle {
             }
             Text {
                 id: precip__text5
+                objectName: "text_5_3"
                 color: "#ffffff"
                 text: qsTr("38%")
                 font.pixelSize: 40*.6
@@ -476,6 +496,7 @@ Rectangle {
 
             Text {
                 id: rain__text0
+                objectName: "text_0_4"
                 color: "#ffffff"
                 text: qsTr("0.01in")
                 font.pixelSize: 40*.6
@@ -487,6 +508,7 @@ Rectangle {
 
             Text {
                 id: rain__text1
+                objectName: "text_1_4"
                 color: "#354658"
                 text: qsTr("0.01in")
                 font.pixelSize: 40*.6
@@ -498,6 +520,7 @@ Rectangle {
 
             Text {
                 id: rain__text2
+                objectName: "text_2_4"
                 color: "#ffffff"
                 text: qsTr("0.02in")
                 font.pixelSize: 40*.6
@@ -509,6 +532,7 @@ Rectangle {
 
             Text {
                 id: rain__text3
+                objectName: "text_3_4"
                 color: "#ffffff"
                 text: qsTr("0.34in")
                 font.pixelSize: 40*.6
@@ -520,6 +544,7 @@ Rectangle {
 
             Text {
                 id: rain__text4
+                objectName: "text_4_4"
                 color: "#ffffff"
                 text: qsTr("0.56in")
                 font.pixelSize: 40*.6
@@ -531,6 +556,7 @@ Rectangle {
 
             Text {
                 id: rain__text5
+                objectName: "text_5_4"
                 color: "#ffffff"
                 text: qsTr("0.05in")
                 font.pixelSize: 40*.6
@@ -554,6 +580,7 @@ Rectangle {
 
             Text {
                 id: snow__text0
+                objectName: "text_0_5"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -565,6 +592,7 @@ Rectangle {
 
             Text {
                 id: snow__text1
+                objectName: "text_1_5"
                 color: "#354658"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -576,6 +604,7 @@ Rectangle {
 
             Text {
                 id: snow__text2
+                objectName: "text_2_5"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -587,6 +616,7 @@ Rectangle {
 
             Text {
                 id: snow__text3
+                objectName: "text_3_5"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -598,6 +628,7 @@ Rectangle {
 
             Text {
                 id: snow__text4
+                objectName: "text_4_5"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -609,6 +640,7 @@ Rectangle {
 
             Text {
                 id: snow__text5
+                objectName: "text_5_5"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -621,7 +653,7 @@ Rectangle {
             Text {
                 id: sleet__text
                 color: "#ffffff"
-                text: qsTr("SLEET")
+                text: qsTr("PRESSURE")
                 font.pixelSize: 30*.6
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
@@ -632,6 +664,7 @@ Rectangle {
 
             Text {
                 id: sleet__text0
+                objectName: "text_0_6"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -643,6 +676,7 @@ Rectangle {
 
             Text {
                 id: sleet__text1
+                objectName: "text_1_6"
                 color: "#354658"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -654,6 +688,7 @@ Rectangle {
 
             Text {
                 id: sleet__text2
+                objectName: "text_2_6"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -665,6 +700,7 @@ Rectangle {
 
             Text {
                 id: sleet__text3
+                objectName: "text_3_6"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -676,6 +712,7 @@ Rectangle {
 
             Text {
                 id: sleet__text4
+                objectName: "text_4_6"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -687,6 +724,7 @@ Rectangle {
 
             Text {
                 id: sleet__text5
+                objectName: "text_5_6"
                 color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
@@ -710,6 +748,7 @@ Rectangle {
 
             Text {
                 id: hum__text0
+                objectName: "text_0_7"
                 color: "#ffffff"
                 text: qsTr("40%")
                 font.pixelSize: 40*.6
@@ -721,6 +760,7 @@ Rectangle {
 
             Text {
                 id: hum__text1
+                objectName: "text_1_7"
                 color: "#354658"
                 text: qsTr("48%")
                 font.pixelSize: 40*.6
@@ -732,6 +772,7 @@ Rectangle {
 
             Text {
                 id: hum__text2
+                objectName: "text_2_7"
                 color: "#ffffff"
                 text: qsTr("64%")
                 font.pixelSize: 40*.6
@@ -743,6 +784,7 @@ Rectangle {
 
             Text {
                 id: hum__text3
+                objectName: "text_3_7"
                 color: "#ffffff"
                 text: qsTr("100%")
                 font.pixelSize: 40*.6
@@ -754,6 +796,7 @@ Rectangle {
 
             Text {
                 id: hum__text4
+                objectName: "text_4_7"
                 color: "#ffffff"
                 text: qsTr("100%")
                 font.pixelSize: 40*.6
@@ -765,6 +808,7 @@ Rectangle {
 
             Text {
                 id: hum__text5
+                objectName: "text_5_7"
                 color: "#ffffff"
                 text: qsTr("43%")
                 font.pixelSize: 40*.6
@@ -788,6 +832,7 @@ Rectangle {
 
             Text {
                 id: cloud__text0
+                objectName: "text_0_8"
                 color: "#ffffff"
                 text: qsTr("52%")
                 font.pixelSize: 40*.6
@@ -799,6 +844,7 @@ Rectangle {
 
             Text {
                 id: cloud__text1
+                objectName: "text_1_8"
                 color: "#354658"
                 text: qsTr("89%")
                 font.pixelSize: 40*.6
@@ -810,6 +856,7 @@ Rectangle {
 
             Text {
                 id: cloud__text2
+                objectName: "text_2_8"
                 color: "#ffffff"
                 text: qsTr("76%")
                 font.pixelSize: 40*.6
@@ -821,6 +868,7 @@ Rectangle {
 
             Text {
                 id: cloud__text3
+                objectName: "text_3_8"
                 color: "#ffffff"
                 text: qsTr("97%")
                 font.pixelSize: 40*.6
@@ -832,6 +880,7 @@ Rectangle {
 
             Text {
                 id: cloud__text4
+                objectName: "text_4_8"
                 color: "#ffffff"
                 text: qsTr("96%")
                 font.pixelSize: 40*.6
@@ -843,6 +892,7 @@ Rectangle {
 
             Text {
                 id: cloud__text5
+                objectName: "text_5_8"
                 color: "#ffffff"
                 text: qsTr("45%")
                 font.pixelSize: 40*.6
@@ -866,6 +916,7 @@ Rectangle {
 
             Text {
                 id: uv__text0
+                objectName: "text_0_9"
                 color: "#ffffff"
                 text: qsTr("0.1")
                 font.pixelSize: 40*.6
@@ -877,6 +928,7 @@ Rectangle {
 
             Text {
                 id: uv__text1
+                objectName: "text_1_9"
                 color: "#354658"
                 text: qsTr("0.1")
                 font.pixelSize: 40*.6
@@ -888,6 +940,7 @@ Rectangle {
 
             Text {
                 id: uv__text2
+                objectName: "text_2_9"
                 color: "#ffffff"
                 text: qsTr("0.3")
                 font.pixelSize: 40*.6
@@ -899,6 +952,7 @@ Rectangle {
 
             Text {
                 id: uv__text3
+                objectName: "text_3_9"
                 color: "#ffffff"
                 text: qsTr("0.6")
                 font.pixelSize: 40*.6
@@ -910,6 +964,7 @@ Rectangle {
 
             Text {
                 id: uv__text4
+                objectName: "text_4_9"
                 color: "#ffffff"
                 text: qsTr("0.9")
                 font.pixelSize: 40*.6
@@ -921,6 +976,7 @@ Rectangle {
 
             Text {
                 id: uv__text5
+                objectName: "text_5_9"
                 color: "#ffffff"
                 text: qsTr("1.2")
                 font.pixelSize: 40*.6
@@ -939,6 +995,7 @@ Rectangle {
 
     Text {
         id: fdd_time__text2
+        objectName: "maintemp_text"
         y: 340*.6
         width: 467*.6
         height: 229*.6

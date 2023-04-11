@@ -4,6 +4,7 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
 
 ApplicationWindow {
+    id: mainwin
     width: 1080*.6
     height: 1920*.6
     visible: true
@@ -20,6 +21,7 @@ ApplicationWindow {
 
         WeatherOverview{
             id: page2
+
         }
 
         ClothingPrep{
