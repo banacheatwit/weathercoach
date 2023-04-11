@@ -9,14 +9,15 @@ class Controller : public QObject
     Q_OBJECT
 
 public:
-    explicit Controller(QObject *parent = nullptr);
+    explicit Controller(QObject *parent = nullptr, QObject* rootObj = nullptr);
+    Q_INVOKABLE void updateFDD();
 
 private:
-    QString** forecast;
-    QString **weather;
-
+    QObject* rootObject;
+    QString** weather;
 
 signals:
+
 
 };
 

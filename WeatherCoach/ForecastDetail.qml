@@ -16,6 +16,8 @@ Rectangle {
     height: 1920*.6
     color: "#ffffff"
     border.color: "#ffffff"
+    objectName: "fdd_rect"
+    property int day: 0
 
     Image {
         id: image
@@ -61,60 +63,179 @@ Rectangle {
             height: 88*.6
             Button {
                 id: day1__button
-                text: "SUN"
+                text: "TODAY"
+                background: Rectangle {
+                    id: background_rect_1
+                    color: "#354658"
+                    border.color: "#ffffff"
+                    border.width: 5*.6
+                }
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
                 flat: false
+                onClicked: {
+                    rectangle.day = 0;
+                    controller.updateFDD();
+                    background_rect_1.color = "#354658";
+                    background_rect_2.color = "#ffffff";
+                    background_rect_3.color = "#ffffff";
+                    background_rect_4.color = "#ffffff";
+                    background_rect_5.color = "#ffffff";
+                    background_rect_6.color = "#ffffff";
+                    background_rect_7.color = "#ffffff";
+                }
             }
 
 
             Button {
                 id: day2__button
-                text: qsTr("MON")
+                text: qsTr("WED")
+                background: Rectangle {
+                    id: background_rect_2
+                    color: "#ffffff"
+                    border.color: "#ffffff"
+                    border.width: 5*.6
+                }
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                onClicked: {
+                    rectangle.day = 1;
+                    controller.updateFDD();
+                    background_rect_1.color = "#ffffff";
+                    background_rect_2.color = "#354658";
+                    background_rect_3.color = "#ffffff";
+                    background_rect_4.color = "#ffffff";
+                    background_rect_5.color = "#ffffff";
+                    background_rect_6.color = "#ffffff";
+                    background_rect_7.color = "#ffffff";
+                }
             }
 
             Button {
                 id: day3__button
-                text: qsTr("TUE")
+                text: qsTr("THU")
+                background: Rectangle {
+                    id: background_rect_3
+                    color: "#ffffff"
+                    border.color: "#ffffff"
+                    border.width: 5*.6
+                }
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                onClicked: {
+                    rectangle.day = 2;
+                    controller.updateFDD();
+                    background_rect_1.color = "#ffffff";
+                    background_rect_2.color = "#ffffff";
+                    background_rect_3.color = "#354658";
+                    background_rect_4.color = "#ffffff";
+                    background_rect_5.color = "#ffffff";
+                    background_rect_6.color = "#ffffff";
+                    background_rect_7.color = "#ffffff";
+                }
             }
 
             Button {
                 id: day4__button
-                text: qsTr("WED")
+                text: qsTr("FRI")
+                background: Rectangle {
+                    id: background_rect_4
+                    color: "#ffffff"
+                    border.color: "#ffffff"
+                    border.width: 5*.6
+                }
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                onClicked: {
+                    rectangle.day = 3;
+                    controller.updateFDD();
+                    background_rect_1.color = "#ffffff";
+                    background_rect_2.color = "#ffffff";
+                    background_rect_3.color = "#ffffff";
+                    background_rect_4.color = "#354658";
+                    background_rect_5.color = "#ffffff";
+                    background_rect_6.color = "#ffffff";
+                    background_rect_7.color = "#ffffff";
+                }
             }
 
             Button {
                 id: day5__button
-                text: qsTr("THU")
+                text: qsTr("SAT")
+                background: Rectangle {
+                    id: background_rect_5
+                    color: "#ffffff"
+                    border.color: "#ffffff"
+                    border.width: 5*.6
+                }
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                onClicked: {
+                    rectangle.day = 4;
+                    controller.updateFDD();
+                    background_rect_1.color = "#ffffff";
+                    background_rect_2.color = "#ffffff";
+                    background_rect_3.color = "#ffffff";
+                    background_rect_4.color = "#ffffff";
+                    background_rect_5.color = "#354658";
+                    background_rect_6.color = "#ffffff";
+                    background_rect_7.color = "#ffffff";
+                }
             }
 
             Button {
                 id: day6__button
-                text: qsTr("FRI")
+                text: qsTr("SUN")
+                background: Rectangle {
+                    id: background_rect_6
+                    color: "#ffffff"
+                    border.color: "#ffffff"
+                    border.width: 5*.6
+                }
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                onClicked: {
+                    rectangle.day = 5;
+                    controller.updateFDD();
+                    background_rect_1.color = "#ffffff";
+                    background_rect_2.color = "#ffffff";
+                    background_rect_3.color = "#ffffff";
+                    background_rect_4.color = "#ffffff";
+                    background_rect_5.color = "#ffffff";
+                    background_rect_6.color = "#354658";
+                    background_rect_7.color = "#ffffff";
+                }
             }
 
             Button {
                 id: day7__button
-                text: qsTr("SAT")
+                text: qsTr("MON")
+                background: Rectangle {
+                    id: background_rect_7
+                    color: "#ffffff"
+                    border.color: "#ffffff"
+                    border.width: 5*.6
+                }
                 font.pointSize: 20*.6
                 Layout.fillHeight: true
                 Layout.fillWidth: true
+                onClicked: {
+                    rectangle.day = 6;
+                    controller.updateFDD();
+                    background_rect_1.color = "#ffffff";
+                    background_rect_2.color = "#ffffff";
+                    background_rect_3.color = "#ffffff";
+                    background_rect_4.color = "#ffffff";
+                    background_rect_5.color = "#ffffff";
+                    background_rect_6.color = "#ffffff";
+                    background_rect_7.color = "#354658";
+                }
             }
         }
 
@@ -127,45 +248,6 @@ Rectangle {
             color: "#354658"
             border.color: "#ffffff"
             border.width: 5*.6
-        }
-
-        RowLayout {
-            x: 0*.6
-            y: 1814*.6
-            width: 1080*.6
-            height: 106*.6
-            Button {
-                id: button7
-                text: qsTr("Forcast Detail")
-                font.pointSize: 20*.6
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-            }
-
-            Button {
-                id: button8
-                text: qsTr("Weather Overview")
-                font.pointSize: 20*.6
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-            }
-
-            Button {
-                id: button9
-                text: qsTr("Clothing Prep")
-                font.pointSize: 20*.6
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-            }
-        }
-
-        Rectangle {
-            id: rectangle2
-            x: 322*.6
-            y: 651*.6
-            width: 128*.6
-            height: 1059*.6
-            color: "#ffffff"
         }
 
         GridLayout {
@@ -199,7 +281,7 @@ Rectangle {
 
             Text {
                 id: time__text1
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("1 am")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -268,7 +350,7 @@ Rectangle {
             Text {
                 id: temp__text1
                 objectName: "text_1_1"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("78°")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -348,7 +430,7 @@ Rectangle {
             Text {
                 id: wind__text1
                 objectName: "text_1_2"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("68°")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -430,7 +512,7 @@ Rectangle {
             Text {
                 id: precip__text1
                 objectName: "text_1_3"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("17%")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -509,7 +591,7 @@ Rectangle {
             Text {
                 id: rain__text1
                 objectName: "text_1_4"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("0.01in")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -593,7 +675,7 @@ Rectangle {
             Text {
                 id: snow__text1
                 objectName: "text_1_5"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -677,7 +759,7 @@ Rectangle {
             Text {
                 id: sleet__text1
                 objectName: "text_1_6"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("0.0in")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -761,7 +843,7 @@ Rectangle {
             Text {
                 id: hum__text1
                 objectName: "text_1_7"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("48%")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -845,7 +927,7 @@ Rectangle {
             Text {
                 id: cloud__text1
                 objectName: "text_1_8"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("89%")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter
@@ -929,7 +1011,7 @@ Rectangle {
             Text {
                 id: uv__text1
                 objectName: "text_1_9"
-                color: "#354658"
+                color: "#ffffff"
                 text: qsTr("0.1")
                 font.pixelSize: 40*.6
                 horizontalAlignment: Text.AlignHCenter

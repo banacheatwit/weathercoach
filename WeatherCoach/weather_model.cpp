@@ -82,21 +82,12 @@ void Weather_Model::getWeather(){
                 }
             }
         }
-        for(int i=0; i<168; i++){
-            for(int j=0; j<12; j++){
-                qDebug() << forecast[i][j];
-            }
-        }
+
         emit getWeatherFinished();
     });
 }
 
 QString** Weather_Model::getForecast(){
-    for(int i=0; i<168; i++){
-        for(int j=0; j<12; j++){
-            qDebug() << forecast[i][j];
-        }
-    }
     return forecast;
 }
 

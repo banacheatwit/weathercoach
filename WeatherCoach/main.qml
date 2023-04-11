@@ -42,6 +42,9 @@ ApplicationWindow {
         TabButton {
             text: qsTr("Clothing Preparation")
         }
+        Component.onCompleted: {
+                tabBar.currentIndex = 1;
+        }
     }
 
 }

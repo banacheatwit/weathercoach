@@ -48,30 +48,6 @@ Rectangle {
             anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
         }
-        RowLayout {
-            x: 0*.6
-            y: 1814*.6
-            width: 1080*.6
-            height: 106*.6
-            Button {
-                id: button7
-                text: qsTr("Forcast Detail")
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-            }
-            Button {
-                id: button8
-                text: qsTr("Weather Overview")
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-            }
-            Button {
-                id: button9
-                text: qsTr("Clothing Prep")
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-            }
-        }
 
         Text {
             id: currently
