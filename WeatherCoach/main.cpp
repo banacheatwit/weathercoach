@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("controller", controller);
 
     controller->updateFDD();
+    controller->updateWOD();
 
     return app.exec();
 }

@@ -26,7 +26,7 @@ Weather_Model::Weather_Model(QObject *parent) : QObject(parent)
     for(int i=0; i<168; i++){
         forecast[i] = new QString[12];
     }
-    current = new QString[53];
+    current = new QString[54];
 }
 
 void Weather_Model::getWeather(){
@@ -112,6 +112,7 @@ void Weather_Model::getCurrrentWeather(){
             QJsonDocument json_response = QJsonDocument::fromJson(response);
             QJsonObject obj_root = json_response.object();
             QJsonObject obj_current = obj_root["current"].toObject();
+            QJsonObject obj_conds = obj_current["condition"].toObject();
             QJsonObject obj_forecast = obj_root["forecast"].toObject();
             QJsonArray array_forecast = obj_forecast["forecastday"].toArray();
             QJsonObject obj_day = array_forecast[0].toObject();
@@ -124,8 +125,9 @@ void Weather_Model::getCurrrentWeather(){
             current[2] = QString::number(obj_daydetail["maxtemp_f"].toDouble());
             current[3] = obj_astro["sunrise"].toString();
             current[4] = obj_astro["sunset"].toString();
+            current[5] = obj_conds["text"].toString();
 
-            int index = 5;
+            int index = 6;
 
             for(int i=0; i<24; i++){
                 QJsonObject obj_hour = array_hour[i].toObject();
@@ -135,9 +137,9 @@ void Weather_Model::getCurrrentWeather(){
                 current[index] = obj_condition["icon"].toString();
                 index++;
             }
-            for(int i=0; i<53; i++){
-                qDebug() << current[i];
-            }
+            //for(int i=0; i<53; i++){
+            //   qDebug() << current[i];
+            //}
         }
 
         emit getCurrentWeatherFinished();

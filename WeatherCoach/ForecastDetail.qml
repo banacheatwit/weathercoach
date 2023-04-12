@@ -77,6 +77,7 @@ Rectangle {
                 onClicked: {
                     rectangle.day = 0;
                     controller.updateFDD();
+                    controller.updateWOD();
                     background_rect_1.color = "#354658";
                     background_rect_2.color = "#ffffff";
                     background_rect_3.color = "#ffffff";
@@ -103,6 +104,7 @@ Rectangle {
                 onClicked: {
                     rectangle.day = 1;
                     controller.updateFDD();
+                    controller.updateWOD();
                     background_rect_1.color = "#ffffff";
                     background_rect_2.color = "#354658";
                     background_rect_3.color = "#ffffff";
@@ -128,6 +130,7 @@ Rectangle {
                 onClicked: {
                     rectangle.day = 2;
                     controller.updateFDD();
+                    controller.updateWOD();
                     background_rect_1.color = "#ffffff";
                     background_rect_2.color = "#ffffff";
                     background_rect_3.color = "#354658";
@@ -153,6 +156,7 @@ Rectangle {
                 onClicked: {
                     rectangle.day = 3;
                     controller.updateFDD();
+                    controller.updateWOD();
                     background_rect_1.color = "#ffffff";
                     background_rect_2.color = "#ffffff";
                     background_rect_3.color = "#ffffff";
@@ -178,6 +182,7 @@ Rectangle {
                 onClicked: {
                     rectangle.day = 4;
                     controller.updateFDD();
+                    controller.updateWOD();
                     background_rect_1.color = "#ffffff";
                     background_rect_2.color = "#ffffff";
                     background_rect_3.color = "#ffffff";
@@ -203,6 +208,7 @@ Rectangle {
                 onClicked: {
                     rectangle.day = 5;
                     controller.updateFDD();
+                    controller.updateWOD();
                     background_rect_1.color = "#ffffff";
                     background_rect_2.color = "#ffffff";
                     background_rect_3.color = "#ffffff";
@@ -228,6 +234,7 @@ Rectangle {
                 onClicked: {
                     rectangle.day = 6;
                     controller.updateFDD();
+                    controller.updateWOD();
                     background_rect_1.color = "#ffffff";
                     background_rect_2.color = "#ffffff";
                     background_rect_3.color = "#ffffff";

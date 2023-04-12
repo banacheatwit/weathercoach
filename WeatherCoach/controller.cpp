@@ -29,7 +29,11 @@ Controller::Controller(QObject *parent, QObject* rootObj)
     W_Model->getCurrrentWeather();
     loop.exec();
 
+    current = new QString[54];
     current = W_Model->getCurrent();
+    for(int i=0; i<54; i++){
+        qDebug() << current[i];
+    }
 
 }
 
@@ -37,7 +41,6 @@ void Controller::updateFDD(){
 
     QDateTime dateTime = QDateTime::currentDateTime();
 
-    // Set time
     rootObject->findChild<QObject*>("maintime_text")->setProperty("text", dateTime.time().toString("h:mm A"));
 
     int hour = dateTime.time().hour();
@@ -75,11 +78,40 @@ void Controller::updateFDD(){
 
                 itemObject->setProperty("text", weather[i+(dayNum*24)][j]+addition);
             }
-            qDebug() << weather[i+(dayNum*24)][j];
+            //qDebug() << weather[i+(dayNum*24)][j];
         }
     }
 }
 
 void Controller::updateWOD(){
+
+    QDateTime dateTime = QDateTime::currentDateTime();
+
+    rootObject->findChild<QObject*>("wod_time_text")->setProperty("text", dateTime.time().toString("h:mm A"));
+
+    rootObject->findChild<QObject*>("wod_temp_text")->setProperty("text", current[0]+"°F");
+    rootObject->findChild<QObject*>("wod_minmax_temp_text")->setProperty("text", "H: "+current[1]+"°F  L: "+current[2]+"°F");
+    rootObject->findChild<QObject*>("wod_sunrise_text")->setProperty("text", "Sunrise:  "+current[3]);
+    rootObject->findChild<QObject*>("wod_sunset_text")->setProperty("text", "Sunset:  "+current[4]);
+    rootObject->findChild<QObject*>("wod_current_conds")->setProperty("text", current[5]);
+
+    int index = 6;
+
+    for(int i=0; i<24; i++){
+        QString objName = "text_"+QString::number(i);
+        QObject* itemObject = rootObject->findChild<QObject*>(objName);
+        if(itemObject){
+            itemObject->setProperty("text", current[index]);
+        }
+        index++;
+        objName = "img_"+QString::number(i);
+        itemObject = rootObject->findChild<QObject*>(objName);
+        if(itemObject){
+            itemObject->setProperty("source", "https:"+current[index]);
+        }
+        index++;
+    }
+
+
 
 }

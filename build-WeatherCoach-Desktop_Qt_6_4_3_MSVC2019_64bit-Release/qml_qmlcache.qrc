@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="main.qml">../WeatherCoach/main.qml</file>
+        <file alias="WeatherOverview.qml">../WeatherCoach/WeatherOverview.qml</file>
+        <file alias="ForecastDetail.qml">../WeatherCoach/ForecastDetail.qml</file>
+        <file alias="partly cloudy.png">../WeatherCoach/partly cloudy.png</file>
+        <file alias="rainy.jpg">../WeatherCoach/rainy.jpg</file>
+        <file alias="snowy.jpg">../WeatherCoach/snowy.jpg</file>
+        <file alias="ClothingPrep.qml">../WeatherCoach/ClothingPrep.qml</file>
+    </qresource>
+</RCC>
