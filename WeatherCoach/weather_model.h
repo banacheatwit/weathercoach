@@ -12,6 +12,8 @@ public:
     explicit Weather_Model(QObject *parent = nullptr);
     QString** getForecast();
     void getWeather();
+    QString* getCurrent();
+    void getCurrrentWeather();
 
 private:
 
@@ -20,9 +22,11 @@ private:
     QDateTime date;
     QGeoCoordinate coordinates;
     QString** forecast;
+    QString* current;
 
 signals:
     void getWeatherFinished();
+    void getCurrentWeatherFinished();
 };
 
 

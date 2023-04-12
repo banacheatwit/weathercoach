@@ -11,10 +11,12 @@ class Controller : public QObject
 public:
     explicit Controller(QObject *parent = nullptr, QObject* rootObj = nullptr);
     Q_INVOKABLE void updateFDD();
+    Q_INVOKABLE void updateWOD();
 
 private:
     QObject* rootObject;
     QString** weather;
+    QString* current;
 
 signals:
 

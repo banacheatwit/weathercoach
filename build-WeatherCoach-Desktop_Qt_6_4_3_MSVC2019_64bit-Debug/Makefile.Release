@@ -829,7 +829,6 @@ release\main.obj: ..\WeatherCoach\main.cpp E:\QT\6.4.3\msvc2019_64\include\QtGui
 		E:\QT\6.4.3\msvc2019_64\include\QtQml\qqmlabstracturlinterceptor.h \
 		E:\QT\6.4.3\msvc2019_64\include\QtQml\QQmlContext \
 		E:\QT\6.4.3\msvc2019_64\include\QtQml\qqmlcontext.h \
-		..\WeatherCoach\controller.h \
 		E:\QT\6.4.3\msvc2019_64\include\QtQuick\QQuickItem \
 		E:\QT\6.4.3\msvc2019_64\include\QtQuick\qquickitem.h \
 		E:\QT\6.4.3\msvc2019_64\include\QtQuick\qtquickglobal.h \
@@ -863,7 +862,12 @@ release\main.obj: ..\WeatherCoach\main.cpp E:\QT\6.4.3\msvc2019_64\include\QtGui
 		E:\QT\6.4.3\msvc2019_64\include\QtGui\qcolor.h \
 		E:\QT\6.4.3\msvc2019_64\include\QtGui\qrgb.h \
 		E:\QT\6.4.3\msvc2019_64\include\QtGui\qrgba64.h \
-		E:\QT\6.4.3\msvc2019_64\include\QtGui\qaccessible_base.h
+		E:\QT\6.4.3\msvc2019_64\include\QtGui\qaccessible_base.h \
+		E:\QT\6.4.3\msvc2019_64\include\QtCore\QDebug \
+		E:\QT\6.4.3\msvc2019_64\include\QtCore\QDateTime \
+		E:\QT\6.4.3\msvc2019_64\include\QtCore\qdatetime.h \
+		E:\QT\6.4.3\msvc2019_64\include\QtCore\qcalendar.h \
+		..\WeatherCoach\controller.h
 
 release\weather_model.obj: ..\WeatherCoach\weather_model.cpp ..\WeatherCoach\weather_model.h \
 		E:\QT\6.4.3\msvc2019_64\include\QtCore\QDateTime \
@@ -963,6 +967,11 @@ release\weather_model.obj: ..\WeatherCoach\weather_model.cpp ..\WeatherCoach\wea
 		E:\QT\6.4.3\msvc2019_64\include\QtCore\QObject \
 		E:\QT\6.4.3\msvc2019_64\include\QtCore\QVector \
 		E:\QT\6.4.3\msvc2019_64\include\QtCore\qvector.h \
+		E:\QT\6.4.3\msvc2019_64\include\QtPositioning\QGeoPositionInfoSource \
+		E:\QT\6.4.3\msvc2019_64\include\QtPositioning\qgeopositioninfosource.h \
+		E:\QT\6.4.3\msvc2019_64\include\QtPositioning\QGeoPositionInfo \
+		E:\QT\6.4.3\msvc2019_64\include\QtPositioning\qgeopositioninfo.h \
+		E:\QT\6.4.3\msvc2019_64\include\QtCore\QExplicitlySharedDataPointer \
 		E:\QT\6.4.3\msvc2019_64\include\QtNetwork\QNetworkAccessManager \
 		E:\QT\6.4.3\msvc2019_64\include\QtNetwork\qnetworkaccessmanager.h \
 		E:\QT\6.4.3\msvc2019_64\include\QtNetwork\qtnetworkglobal.h \

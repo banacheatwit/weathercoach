@@ -10,6 +10,8 @@
 Controller::Controller(QObject *parent, QObject* rootObj)
     : QObject(parent)
 {
+    rootObject = rootObj;
+
     Weather_Model *W_Model = new Weather_Model;
     weather = new QString*[168];
     for(int i=0; i<168; i++){
@@ -22,7 +24,13 @@ Controller::Controller(QObject *parent, QObject* rootObj)
     loop.exec();
 
     weather = W_Model->getForecast();
-    rootObject = rootObj;
+
+    QObject::connect(W_Model, &Weather_Model::getCurrentWeatherFinished, &loop, &QEventLoop::quit);
+    W_Model->getCurrrentWeather();
+    loop.exec();
+
+    current = W_Model->getCurrent();
+
 }
 
 void Controller::updateFDD(){
@@ -70,4 +78,8 @@ void Controller::updateFDD(){
             qDebug() << weather[i+(dayNum*24)][j];
         }
     }
+}
+
+void Controller::updateWOD(){
+
 }

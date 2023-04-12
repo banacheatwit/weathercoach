@@ -26,10 +26,11 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_Weather_Model_t {
-    uint offsetsAndSizes[6];
+    uint offsetsAndSizes[8];
     char stringdata0[14];
     char stringdata1[19];
     char stringdata2[1];
+    char stringdata3[26];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_Weather_Model_t::offsetsAndSizes) + ofs), len 
@@ -37,11 +38,13 @@ Q_CONSTINIT static const qt_meta_stringdata_Weather_Model_t qt_meta_stringdata_W
     {
         QT_MOC_LITERAL(0, 13),  // "Weather_Model"
         QT_MOC_LITERAL(14, 18),  // "getWeatherFinished"
-        QT_MOC_LITERAL(33, 0)   // ""
+        QT_MOC_LITERAL(33, 0),  // ""
+        QT_MOC_LITERAL(34, 25)   // "getCurrentWeatherFinished"
     },
     "Weather_Model",
     "getWeatherFinished",
-    ""
+    "",
+    "getCurrentWeatherFinished"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -52,17 +55,19 @@ Q_CONSTINIT static const uint qt_meta_data_Weather_Model[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x06,    1 /* Public */,
+       1,    0,   26,    2, 0x06,    1 /* Public */,
+       3,    0,   27,    2, 0x06,    2 /* Public */,
 
  // signals: parameters
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -78,6 +83,8 @@ Q_CONSTINIT const QMetaObject Weather_Model::staticMetaObject = { {
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Weather_Model, std::true_type>,
         // method 'getWeatherFinished'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'getCurrentWeatherFinished'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -90,6 +97,7 @@ void Weather_Model::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         (void)_t;
         switch (_id) {
         case 0: _t->getWeatherFinished(); break;
+        case 1: _t->getCurrentWeatherFinished(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -98,6 +106,13 @@ void Weather_Model::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             using _t = void (Weather_Model::*)();
             if (_t _q_method = &Weather_Model::getWeatherFinished; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (Weather_Model::*)();
+            if (_t _q_method = &Weather_Model::getCurrentWeatherFinished; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 1;
                 return;
             }
         }
@@ -124,13 +139,13 @@ int Weather_Model::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }
@@ -139,6 +154,12 @@ int Weather_Model::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void Weather_Model::getWeatherFinished()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void Weather_Model::getCurrentWeatherFinished()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE
