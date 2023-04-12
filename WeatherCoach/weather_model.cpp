@@ -137,9 +137,6 @@ void Weather_Model::getCurrrentWeather(){
                 current[index] = obj_condition["icon"].toString();
                 index++;
             }
-            //for(int i=0; i<53; i++){
-            //   qDebug() << current[i];
-            //}
         }
 
         emit getCurrentWeatherFinished();

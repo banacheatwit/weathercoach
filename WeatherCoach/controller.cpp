@@ -31,9 +31,6 @@ Controller::Controller(QObject *parent, QObject* rootObj)
 
     current = new QString[54];
     current = W_Model->getCurrent();
-    for(int i=0; i<54; i++){
-        qDebug() << current[i];
-    }
 
 }
 
@@ -47,7 +44,6 @@ void Controller::updateFDD(){
     rootObject->findChild<QObject*>("maintemp_text")->setProperty("text", weather[hour][1]+"°F");
 
     int dayNum = rootObject->findChild<QObject*>("fdd_rect")->property("day").toInt();
-    qDebug() << dayNum;
 
     for(int i=0; i<24; i++){
         for(int j=0; j<12; j++){
@@ -78,7 +74,6 @@ void Controller::updateFDD(){
 
                 itemObject->setProperty("text", weather[i+(dayNum*24)][j]+addition);
             }
-            //qDebug() << weather[i+(dayNum*24)][j];
         }
     }
 }
@@ -101,7 +96,7 @@ void Controller::updateWOD(){
         QString objName = "text_"+QString::number(i);
         QObject* itemObject = rootObject->findChild<QObject*>(objName);
         if(itemObject){
-            itemObject->setProperty("text", current[index]);
+            itemObject->setProperty("text", current[index]+"°F");
         }
         index++;
         objName = "img_"+QString::number(i);
